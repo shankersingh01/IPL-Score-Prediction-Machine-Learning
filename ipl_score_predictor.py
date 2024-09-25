@@ -4,14 +4,17 @@ import math
 import numpy as np
 import pickle
 import streamlit as st
+import joblib
 
 #SET PAGE WIDE
 st.set_page_config(page_title='IPL_Score_Predictor',layout="centered")
 
 #Get the ML model 
 
-filename='ml_model.pkl'
-model = pickle.load(open(filename,'rb'))
+filename='ml_model_compressed.pkl'
+# model = pickle.load(open(filename,'rb'))
+model = joblib.load(open(filename,'rb'))
+
 
 #Title of the page with CSS
 
