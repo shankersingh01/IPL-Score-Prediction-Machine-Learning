@@ -6,6 +6,8 @@ import pickle
 import streamlit as st
 import joblib
 
+st.cache.clear()
+
 #SET PAGE WIDE
 st.set_page_config(page_title='IPL_Score_Predictor',layout="centered")
 
